@@ -32,13 +32,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/jaiminpatel91/e-commerce.git"
+    "url": "https://github.com/jaiminpatel91/cheap-cart.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/jaiminpatel91/e-commerce/issues"
+    "url": "https://github.com/jaiminpatel91/cheap-cart/issues"
   },
-  "homepage": "https://gitlab.com/jaiminpatel91/e-commerce#README"
+  "homepage": "https://github.com/jaiminpatel91/cheap-cart#README"
 }
