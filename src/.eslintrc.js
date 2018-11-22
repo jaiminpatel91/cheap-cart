@@ -9,16 +9,6 @@ module.exports = {
         "require": true,
         "module": true,
     },
-    "extends": "eslint:recommended",
-    "parser": "babel-eslint",
-    "parserOptions": {
-        "ecmaFeatures": {
-            "experimentalObjectRestSpread": true,
-            "jsx": true,
-            "es6": true,
-        },
-        "sourceType": "module"
-    },
     "plugins": [
         "babel",
         "react"
