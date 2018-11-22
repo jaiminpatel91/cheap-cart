@@ -11,19 +11,21 @@
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.5",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.1.0",
+    "serve": "^9.4.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
+    "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
   "main": "index.js",
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "eslint": "^5.9.0"
+    "babel-core": "^6.26.3"
   },
   "repository": {
     "type": "git",
