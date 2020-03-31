@@ -7,7 +7,7 @@ class Header extends Component {
         super(props);
     }
     componentDidMount() {
-        this.props.dispatch(addToken);
+        this.props.dispatch(addToken());
     }
 
     render() {
