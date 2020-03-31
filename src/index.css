@@ -1,4 +1,23 @@
-body h1 {
+.logo {
+  background-color: whitesmoke;
+  height: 65px;
+  padding: 20px;
+  padding-left: 5%;
+  padding-right: 5%; }
+
+.logo .image-cart {
   color: red; }
 
-/*# sourceMappingURL=index.css.map */
+.logo .input-search {
+  outline: 0px;
+  height: 40px;
+  font-size: 20px;
+  width: 550px;
+  margin-left: 25px; }
+
+.logo td {
+  padding-left: 10px; }
+
+body {
+  margin: 0px;
+  margin: 5px; }
