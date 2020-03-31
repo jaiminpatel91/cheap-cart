@@ -9,6 +9,7 @@ export class Home extends Component {
             <div>
                 <h1>Im  here.. jaimin</h1>
                 <FontAwesomeIcon icon={faHome} />
+                <h1>Im  here jaimin</h1>
             </div>
         )
     }
