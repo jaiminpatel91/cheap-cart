@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Banner } from './Banner/banner';
+import ProductList from './ProductList/productList';
 
 export class Home extends Component {
 
@@ -8,6 +10,8 @@ export class Home extends Component {
         return (
             <div>
                 <FontAwesomeIcon icon={faHome} />
+                <Banner />
+                <ProductList />
             </div>
         )
     }
