@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import {addToken} from "../../actions/appAction";
+import {addToken, addProductList} from "../../actions/appAction";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
+import  data  from '../../data';
 
 class Header extends Component {
     constructor(props) {
@@ -10,9 +11,15 @@ class Header extends Component {
         this.state = {
             name: 'change me'
         }
+        this.loadProductList = this.loadProductList.bind(this);
     }
     componentDidMount() {
-        this.props.dispatch(addToken(this.state.name));
+    }
+
+    loadProductList = (event) => {
+        if (event.keyCode === 13 && event.target.value.length > 1) {
+            this.props.dispatch(addProductList(data));
+        }
     }
 
     render() {
@@ -20,6 +27,7 @@ class Header extends Component {
             <div>
                 <header className={"logo"}>
                     <table>
+                        <tbody>
                         <tr>
                             <td>
                             <FontAwesomeIcon icon={faCartPlus} size={'4x'} className={"image-cart"} />
@@ -28,9 +36,11 @@ class Header extends Component {
                                 <span>Category</span>
                             </td>
                             <td>
-                            <input type="text" className={"input-search"} />
+                            <input type="text" className={"input-search"} 
+                            onKeyUp={e => this.loadProductList(e)} />
                             </td>
                         </tr>
+                        </tbody>
                     </table>
                 </header>
             </div>
