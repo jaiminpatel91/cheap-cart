@@ -1,8 +1,5 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import {addToken} from "../../actions/appAction";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartPlus, faPager } from '@fortawesome/free-solid-svg-icons';
 
 class ProductList extends Component {
     constructor(props) {
@@ -12,13 +9,21 @@ class ProductList extends Component {
         }
     }
     componentDidMount() {
-       
+    //    fetch("../../data.json").then((response) => response.json())
+    //    .then((findresponse)=> {
+    //      console.log("check me", findresponse);
+    //    })
     }
 
     render() {
         return (
-            <div>
-                <FontAwesomeIcon icon={faPager} />
+            <div className={'product-list-content'}>
+                {
+                    this.props.productList.data ? 
+                    this.props.productList.data.map((el, index) => (<div key={index} className={'block'}>
+                        <img src={el.img} />{el.name}
+                        </div>)) : null
+                }
             </div>
         )
     }

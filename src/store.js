@@ -4,7 +4,8 @@ import { createLogger } from 'redux-logger';
 import reducer  from './reducers/appReducer';
 
 const initialState = {
-    name: 'jaimin'
+    name: 'jaimin',
+    productList: {}
 };
 
 const loggerMiddleware = createLogger();
