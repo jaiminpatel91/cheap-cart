@@ -1,14 +1,15 @@
 .product-list-content {
     border-left: 2px solid black;
-    padding-left: 20px;
+    flex-basis: 86%;
 }
 .block {
-    width: 150px;
-    height: 200px;
+    height: 250px;
     display: inline-block;
+    padding-left: 50px;
     img {
         width: 140px;
         height: 150px;
         border: 1px solid gray;
+        display: block;
     }
 }

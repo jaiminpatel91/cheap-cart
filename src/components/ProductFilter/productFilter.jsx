@@ -14,14 +14,8 @@ class ProductFilter extends Component {
 
     render() {
         return (
+            <div className={'product-filter'}>
             <div>
-                <div className="soryBy-panel">
-                    <select>
-                        <option value="low to high">Low to High</option>
-                        <option value="high to low">High to Low</option>
-                    </select>
-                </div>
-            <div className={'product-list-filter'}>
                 <h1>Im filter</h1>
             </div>
             </div>

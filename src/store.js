@@ -7,7 +7,8 @@ const initialState = {
     name: 'jaimin',
     productList: {
         data: []
-    }
+    },
+    loading: false,
 };
 
 const loggerMiddleware = createLogger();

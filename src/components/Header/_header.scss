@@ -11,10 +11,22 @@
         outline: 0px;
         height: 40px;
         font-size: 20px;
-        width: 550px;
+        width: 100%;
         margin-left: 25px;
     }
     td {
         padding-left: 10px;
+    }
+    .logo-width {
+        width: 8%;
+    }
+    .category-width {
+        width: 4%;
+    }
+    .search-width {
+        width: 50%;
+    }
+    .profile-width {
+        width: 30%;
     }
 }
