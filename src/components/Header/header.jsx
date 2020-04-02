@@ -18,7 +18,13 @@ class Header extends Component {
 
     loadProductList = (event) => {
         if (event.keyCode === 13 && event.target.value.length > 1) {
-            this.props.dispatch(addProductList(data));
+            let productList = {
+                data: []
+            };
+            productList.data = data.data.filter((item) => {
+                return item.name.toLowerCase().includes(event.target.value);
+            })
+            productList.data.length > 0 ? this.props.dispatch(addProductList(productList)) : this.props.dispatch(addProductList(data));
         }
     }
 

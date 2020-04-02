@@ -5,7 +5,9 @@ import reducer  from './reducers/appReducer';
 
 const initialState = {
     name: 'jaimin',
-    productList: {}
+    productList: {
+        data: []
+    }
 };
 
 const loggerMiddleware = createLogger();
