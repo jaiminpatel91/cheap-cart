@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSpinner, faYinYang } from '@fortawesome/free-solid-svg-icons';
 
 class ProductList extends Component {
     constructor(props) {
@@ -20,8 +22,12 @@ class ProductList extends Component {
             <div className={'product-list-content'}>
                 {
                     this.props.productList.data ? 
-                    this.props.productList.data.map((el, index) => (<div key={index} className={'block'}>
-                        <img src={el.img} />{el.name}
+                    this.props.productList.data.map((el, index) => (<div key={el.img} className={'block'}>
+                        <img src={el.img} />
+                        <div>
+                            {el.name}
+                            </div>
+                            <div> {'$' +el.price} </div>
                         </div>)) : null
                 }
             </div>

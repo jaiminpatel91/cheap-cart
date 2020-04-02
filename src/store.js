@@ -5,7 +5,10 @@ import reducer  from './reducers/appReducer';
 
 const initialState = {
     name: 'jaimin',
-    productList: {}
+    productList: {
+        data: []
+    },
+    loading: false,
 };
 
 const loggerMiddleware = createLogger();
