@@ -31,7 +31,7 @@
   width: 30%; }
 
 .product-list-content {
-  border-left: 2px solid black;
+  border-left: 2px solid grey;
   flex-basis: 86%; }
 
 .block {
@@ -42,7 +42,7 @@
 .block img {
   width: 140px;
   height: 150px;
-  border: 1px solid gray;
+  border: 1px solid lightgray;
   display: block; }
 
 .product-filter {

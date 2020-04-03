@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import {addToken, addProductList, onLoading, offLoading} from "../../actions/appAction";
+import {searchKeyword, addProductList, onLoading, offLoading} from "../../actions/appAction";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 import  data  from '../../data';
@@ -9,7 +9,6 @@ class Header extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: 'change me'
         }
         this.loadProductList = this.loadProductList.bind(this);
     }
@@ -18,6 +17,7 @@ class Header extends Component {
 
     loadProductList = (event) => {
         if (event.keyCode === 13 && event.target.value.length > 1) {
+            this.props.dispatch(searchKeyword(event.target.value));
             this.props.dispatch(onLoading(true));
             let productList = {
                 data: []

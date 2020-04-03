@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSpinner, faYinYang } from '@fortawesome/free-solid-svg-icons';
 
 class ProductList extends Component {
     constructor(props) {

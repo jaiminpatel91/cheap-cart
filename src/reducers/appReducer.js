@@ -1,9 +1,9 @@
-import { ADD_TOKEN, ADD_PRODUCTLIST, ON_LOADING, OFF_LOADING } from '../actions/appAction';
+import { SEARCH_KEYWORD, ADD_PRODUCTLIST, ON_LOADING, OFF_LOADING } from '../actions/appAction';
 
 const reducer = function (state, action) {
     switch (action.type) {
-        case ADD_TOKEN:
-            return { ...state, name: action.token };
+        case SEARCH_KEYWORD:
+            return { ...state, searchKeyword: action.token };
 
         case ADD_PRODUCTLIST:
             return { ...state, productList: action.token };

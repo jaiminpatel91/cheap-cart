@@ -40,6 +40,12 @@ class ProductSortBy extends Component {
     render() {
         return (
                 <div className="soryBy-panel">
+                    <label>
+                        {
+                            this.props.productList.data.length > 0 ? ' 1-1 of over ' + this.props.productList.data.length + ' results for '
+                            + this.props.searchKeyword : ''
+                        }
+                    </label>
                     <label>Sort By: </label>
                     <select onChange={this.change}>
                         <option value="" default>Relevance</option>

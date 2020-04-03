@@ -4,7 +4,7 @@ import { createLogger } from 'redux-logger';
 import reducer  from './reducers/appReducer';
 
 const initialState = {
-    name: 'jaimin',
+    searchKeyword: '',
     productList: {
         data: []
     },
