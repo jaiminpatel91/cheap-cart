@@ -15,7 +15,7 @@ class ProductSortBy extends Component {
     }
 
     change = (event) => {
-        this.props.dispatch(onLoading(false));
+        this.props.dispatch(onLoading(true));
         if (event.target.value === 'asc') {
             let mydata = {
                 data: this.props.productList.data
@@ -40,6 +40,12 @@ class ProductSortBy extends Component {
     render() {
         return (
                 <div className="soryBy-panel">
+                    <label>
+                        {
+                            this.props.productList.data.length > 0 ? ' 1-1 of over ' + this.props.productList.data.length + ' results for '
+                            + this.props.searchKeyword : ''
+                        }
+                    </label>
                     <label>Sort By: </label>
                     <select onChange={this.change}>
                         <option value="" default>Relevance</option>

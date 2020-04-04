@@ -1,7 +1,7 @@
 .logo {
   background-color: whitesmoke;
-  height: 65px;
-  padding: 20px;
+  padding-top: 5px;
+  padding-bottom: 25px;
   padding-left: 5%;
   padding-right: 5%; }
 
@@ -31,8 +31,8 @@
   width: 30%; }
 
 .product-list-content {
-  border-left: 2px solid black;
-  flex-basis: 86%; }
+  border-left: 2px solid grey;
+  flex-basis: 80%; }
 
 .block {
   height: 250px;
@@ -42,11 +42,10 @@
 .block img {
   width: 140px;
   height: 150px;
-  border: 1px solid gray;
   display: block; }
 
 .product-filter {
-  flex-basis: 10%;
+  flex-basis: 15%;
   padding: 20px;
   display: inline-block; }
 

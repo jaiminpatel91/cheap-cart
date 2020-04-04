@@ -1,10 +1,10 @@
-export const ADD_TOKEN = 'ADD_TOKEN';
+export const SEARCH_KEYWORD = 'SEARCH_KEYWORD';
 export const ADD_PRODUCTLIST = 'ADD_PRODUCTLIST';
 export const ON_LOADING = 'ON_LOADING';
 export const OFF_LOADING = 'OFF_LOADING';
 
-export const addToken = token => ({
-    type: ADD_TOKEN,
+export const searchKeyword = token => ({
+    type: SEARCH_KEYWORD,
     token,
 });
 
