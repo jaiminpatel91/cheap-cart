@@ -20,7 +20,7 @@ class ProductList extends Component {
             <div className={'product-list-content'}>
                 {
                     this.props.productList.data ? 
-                    this.props.productList.data.map((el, index) => (<div key={el.img} className={'block'}>
+                    this.props.productList.data.map((el, index) => (<div className={'block'}>
                         <img src={el.img} />
                         <div>
                             {el.name}

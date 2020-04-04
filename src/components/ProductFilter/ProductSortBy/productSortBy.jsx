@@ -15,7 +15,7 @@ class ProductSortBy extends Component {
     }
 
     change = (event) => {
-        this.props.dispatch(onLoading(false));
+        this.props.dispatch(onLoading(true));
         if (event.target.value === 'asc') {
             let mydata = {
                 data: this.props.productList.data
